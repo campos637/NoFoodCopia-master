@@ -13,8 +13,8 @@ const app = express(); /* criação do app */
 
 
 // Configuração de parse do JSON
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json({ limit:'10mb' }));
+app.use(bodyParser.urlencoded({ limit:'10mb', extended: false }));
 
 //configuraando a conexão com o banco de dados
 mongoose.connect(variables.DATABASE.connection, { useNewUrlParser: true });

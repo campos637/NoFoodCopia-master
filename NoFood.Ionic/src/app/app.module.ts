@@ -17,6 +17,7 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { CategoriaProvider } from '../providers/categoria/categoria';
 import { CameraProvider } from '../providers/camera/camera';
+import { ProdutoProvider } from '../providers/produto/produto';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { CameraProvider } from '../providers/camera/camera';
     CategoriaProvider,
     CameraProvider,
     Camera,
-    Network    
+    Network,
+    ProdutoProvider    
   ]
 })
 export class AppModule { }
